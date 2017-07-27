@@ -7,6 +7,8 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  // debug: true,
+  devtools: 'eval-source-map',
   module: {
     loaders: [{
       exclude: /node_modules/,
@@ -21,6 +23,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    port: 5000
   }
 };
